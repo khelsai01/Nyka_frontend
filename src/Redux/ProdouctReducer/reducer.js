@@ -15,7 +15,7 @@ export const reducer = (state=initstate ,{type,payload})=>{
             return {...state ,isLoading:true}
         }
         case PRODUCT_SUCCESS:{
-            return {...state , isLoading:false,isError:false,product:payload.data}
+            return {...state , isLoading:false,isError:false,product:payload}
         }
         case PRODUCT_ADD_SUCCESS:{
             return {...state, isLoading:false, isError:false,product:payload}

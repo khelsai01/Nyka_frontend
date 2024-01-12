@@ -26,13 +26,15 @@ const handleAdd = (e)=>{
     category,
     gender
   }
-  console.log(newData)
+
 
  dispatch(addProduct(newData))
+
+ alert("New product Add Successful on store")
 }
     return (
         <Container>
-            <FormControl w="500px" m="auto" p="15px" textAlign={"end"}>
+            <FormControl w="500px" m="auto" p="15px" textAlign={"start"}>
                 <Box>
 
                     <label>Name of Producet :-

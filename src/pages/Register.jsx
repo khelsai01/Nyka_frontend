@@ -54,7 +54,7 @@ const Register = () => {
     <Flex
       justifyContent={"space-around"}
       width={"90%"}
-      margin={"auto"}
+    
       direction={{
         base: "column",
         sm: "column",
@@ -65,13 +65,14 @@ const Register = () => {
       }}
       gap="30px"
       alignItems={"center"}
+      margin={"auto"}
     >
       <Box
        
         width={{
-          base: "80%",
-          sm: "80%",
-          md: "80%",
+          base: "60%",
+          sm: "60%",
+          md: "60%",
           lg: "50%",
           xl: "50%",
           "2xl": "50%",
@@ -85,16 +86,16 @@ const Register = () => {
         boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"} 
         mt={"2%"}
         width={{
-          base: "80%",
-          sm: "80%",
-          md: "80%",
-          lg: "50%",
-          xl: "50%",
+          base: "40%",
+          sm: "40%",
+          md: "40%",
+          lg: "40%",
+          xl: "40%",
           "2xl": "50%",
         }}
       >
         
-        <Heading fontFamily={"sans-serif"} size='lg' >Sign Up</Heading>
+        <Heading fontFamily={"poppins"} size='lg' color={"#013CC6"} >Register at Nyka</Heading>
         <FormControl   isRequired>
           <FormLabel marginTop={"8px"} >Enter Name</FormLabel>
           <InputGroup>
@@ -127,8 +128,8 @@ const Register = () => {
             onClick={handleSubmit}
             type='submit'
             mb={2}
-            fontFamily={"sans-serif"}
-            bg={"#FEC8D8"}
+            fontFamily={"poppins"}
+            bg={"#fe5285"}
           border={"none"}
             p="7px" borderRadius="5px"
           >
@@ -136,7 +137,7 @@ const Register = () => {
           </Button>
           
         </FormControl>
-        <Text fontFamily={"sans-serif"} size={"md"}>Already have an account ? <Link style={{color:"teal",fontWeight:"600",}}  to={'/login'}>Sign In</Link></Text>
+        <Text fontFamily={"poppins"} size={"md"}>Already have an account ? <Link style={{color:"teal",fontWeight:"600",}}  to={'/login'}>Sign In</Link></Text>
       </Box>
     </Flex>
   );

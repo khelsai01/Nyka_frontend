@@ -3,9 +3,10 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <Container>
-        <Box>
-            <Heading fontFamily={"poppins"} fontSize="40px">Welcome To the Nyka Home page</Heading>
+    <Container maxW={"100%"}>
+        <Box maxW={"100%"} mt="150px">
+            <Heading fontFamily={"poppins"} fontSize="40px" textAlign={"center"}>Welcome To the Nyka Home page</Heading>
+            <Image src='https://finshiksha.com/wp-content/uploads/2022/04/Nykaa-Banner-Image.jpg' alt="nyka" m="auto" />
         </Box>
         <Image src="" />
     </Container>

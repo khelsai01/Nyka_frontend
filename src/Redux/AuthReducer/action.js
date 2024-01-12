@@ -1,5 +1,5 @@
 import axios from "axios"
-import { LOGIN_FAILTUE, LOGIN_REQUEST, LOGIN_SUCCESS, REGISTER_SUCCESS } from "./actionTypes";
+import { LOGIN_FAILTUE, LOGIN_REQUEST, LOGIN_SUCCESS, REGISTER_SUCCESS ,LOGOUT} from "./actionTypes";
 export const URL = "https://odd-fly-costume.cyclic.app/api"
 // export const URL = "http://localhost:8080/api";
 
@@ -26,3 +26,10 @@ export const register =(obj)=>(dispatch)=>{
     dispatch({type:LOGIN_FAILTUE})
     })
 }
+
+export const logout = () => (dispatch) => {
+
+  localStorage.removeItem('token');
+
+  dispatch({ type:"LOGOUT" });
+};

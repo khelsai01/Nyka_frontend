@@ -76,8 +76,9 @@ const Login = () => {
 
   return (
     <Flex
+  
       width={"90%"}
-      margin={"auto"}
+    
       flexDirection={{
         base: "column",
         sm: "column",
@@ -87,14 +88,15 @@ const Login = () => {
         
       }}
       alignItems={"center"}
+      margin={"auto"}
     >
       <Box
         width={{
-          base: "40%",
-          sm: "40%",
-          md: "40%",
-          lg: "40%",
-          xl: "40%",
+          base: "50%",
+          sm: "50%",
+          md: "50%",
+          lg: "50%",
+          xl: "50%",
           "2xl": "50%",
         }}
       >
@@ -102,17 +104,17 @@ const Login = () => {
       </Box>
       <Box
         width={{
-          base: "60%",
-          sm: "60%",
-          md: "60%",
-          lg: "60%",
-          xl: "60%",
+          base: "40%",
+          sm: "40%",
+          md: "40%",
+          lg: "40%",
+          xl: "40%",
           "2xl": "40%",
         }}
         padding={"20px"}
         boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"} 
       >
-        <Heading fontFamily={"sans-serif"} size='lg' >Sign In</Heading>
+        <Heading fontFamily={"poppins"} size='lg' color={"#013CC6"} >Sign In Nyka</Heading>
         <FormControl  isRequired>
           <FormLabel marginTop={"10px"} >Enter Email</FormLabel>
           <InputGroup>
@@ -134,11 +136,11 @@ const Login = () => {
             onClick={handleSubmit}
             type='submit'
             mb={2}
-            fontFamily={"sans-serif"}
+            fontFamily={"poppins"}
           >
             Sign In
           </Button>
-          <Text fontFamily={"sans-serif"} size={"md"}>Do not have an account ? <Link style={{color:"teal",fontWeight:"600"}} to={'/'}>Sign Up</Link></Text>
+          <Text fontFamily={"poppins"} size={"md"}>Do not have an account ? <Link style={{color:"teal",fontWeight:"600"}} to={'/register'}>Sign Up</Link></Text>
         </FormControl>
       </Box>
     </Flex>

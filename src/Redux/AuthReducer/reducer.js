@@ -1,4 +1,4 @@
-import { LOGIN_FAILTUE, LOGIN_REQUEST, LOGIN_SUCCESS, REGISTER_SUCCESS } from "./actionTypes"
+import { LOGIN_FAILTUE, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT, REGISTER_SUCCESS } from "./actionTypes"
 
 const inital ={
     isLoading: false,
@@ -24,6 +24,9 @@ const inital ={
         }
         case REGISTER_SUCCESS:{
             return{...state,isLoading:false,isAuth:true,avatar:payload.avatar,name:payload.name,gender:payload.gender}
+        }
+        case LOGOUT:{
+            return{...state, isAuth:false,token:"" ,name:"",avatar:"",gender:""}
         }
         default :return state;
     }

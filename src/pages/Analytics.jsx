@@ -1,8 +1,15 @@
+import { Container, HStack } from '@chakra-ui/react'
 import React from 'react'
+import SideNavbar from './SideNavbar'
 
 const Analytics = () => {
   return (
-    <div>Analytics</div>
+    <Container>
+      <HStack>
+      <SideNavbar />
+      </HStack>
+      
+    </Container>
   )
 }
 

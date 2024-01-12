@@ -2,4 +2,4 @@ export const LOGIN_REQUEST ="LOGIN_REQEST";
 export const LOGIN_FAILTUE ="LOGINFAILTUE";
 export const LOGIN_SUCCESS ="LOGINSUCCESS";
 export const REGISTER_SUCCESS ="REGISTERSUCCESS";
-
+export const LOGOUT ='LOGOUT'

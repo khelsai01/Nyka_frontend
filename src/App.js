@@ -1,10 +1,8 @@
 import { useSelector } from 'react-redux';
 import './App.css';
-import AddProduct from './pages/AddProduct';
-import Dashboard from './pages/Dashboard';
-import Login from './pages/Login';
 import AllRoutes from './pages/AllRoutes';
 import Navbar from './pages/Navbar';
+
 
 
 function App() {
@@ -15,9 +13,6 @@ function App() {
     <div className="App">
       <Navbar />
       <AllRoutes />
-     {/* {!isAuth?  <Login/>:  <Dashboard />} */}
-      {/* <AddProduct /> */}
-    
     </div>
   );
 }
