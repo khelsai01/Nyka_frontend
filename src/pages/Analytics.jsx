@@ -1,12 +1,14 @@
 import { Container, HStack } from '@chakra-ui/react'
 import React from 'react'
 import SideNavbar from './SideNavbar'
+import Products from './Products'
 
 const Analytics = () => {
   return (
-    <Container>
-      <HStack>
+    <Container maxW={"100%"} mt="25px"  bg="#F8F8F8">
+    <HStack maxW={"100%"}>
       <SideNavbar />
+      <Products />
       </HStack>
       
     </Container>
